@@ -2,38 +2,84 @@
 <html>
 
 <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <title>Stationary Shop</title>
+    <meta name="description" content="A Catalog of stationary goods">
+    <script src="https://kit.fontawesome.com/79730d7193.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
-</head>
 
-<body>
-    <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
-    </header>
-    <div id="card-container">
+</head>
+    <div class="header">
+        <header id="header-main">
+            <div class="header-container">
+                <div id="header-logo">
+                    <img src="image/logo.jpeg" alt="Logo">
+                </div>
         
-    </div>
-    <div class="card" style="display: none;">
-        <div class="card-content">
-            <h2>TV Show Title</h2>
-            <img src="" alt="TV Show Poster">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#shop" class="nav nav_link">Shop</a></li>
+                        <li><a href="#contact"class="nav nav_link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="navbar-b">
+            <div class="dropdown">
+                <select name="">
+                    <option value="All">All</option>
+                    <option value="Notebooks">Notebooks</option>
+                    <option value="Writing">Writing</option>
+                    <option value="Stickers">Stickers</option>
+                    <option value="Highlighters">Highlighters</option>
+                </select>
+
+            </div>
+            
+            <div class="search">
+                <input type="search" placeholder="Search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
             <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
+                <a href="cart.html">
+                    <button class="cart">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <p id="cart-count">0</p>
+                    </button>
+                </a>
+            </ul>    
+        
         </div>
     </div>
-    <div class="footer">
-        <button onclick="quoteAlert();">
-            Get A Quote!
-        </button>
-        <button onclick="removeLastCard();">
-            Remove A Card!
-        </button>
+
+
+    <section class="product"> 
+        <h2 class="product-category">Featuring</h2>
+        <button class="pre-btn"><img src="image/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="image/arrow.png" alt=""></button>
+        <div class="product-container" id="productContainer"></div>
+    </section>
+
+    <div class="container">
+        <div id="root"></div>
     </div>
+
+
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>
+            <br>If you have any questions or concerns, please contact us at:<br>
+            <a href="url">hong.kristal@gmail.com</a> <br><br>
+
+            Thank you!
+        </p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
 </body>
 
 </html>
